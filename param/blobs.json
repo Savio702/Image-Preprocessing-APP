@@ -1,0 +1,28 @@
+{
+  "format": "image-processing-pipeline",
+  "version": 1,
+  "pipeline": [
+    {
+      "tool_id": "Median Blur",
+      "label": "中值濾波",
+      "enabled": true,
+      "params": {
+        "kernel_size": 5
+      }
+    },
+    {
+      "tool_id": "Hough Circles",
+      "label": "霍夫圓形",
+      "enabled": true,
+      "params": {
+        "dp": 10,
+        "min_dist": 10,
+        "canny_high": 109,
+        "threshold": 40,
+        "min_radius": 0,
+        "max_radius": 500,
+        "line_width": 2
+      }
+    }
+  ]
+}

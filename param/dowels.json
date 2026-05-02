@@ -1,0 +1,20 @@
+{
+  "format": "image-processing-pipeline",
+  "version": 1,
+  "pipeline": [
+    {
+      "tool_id": "Hough Circles",
+      "label": "霍夫圓形",
+      "enabled": true,
+      "params": {
+        "dp": 10,
+        "min_dist": 13,
+        "canny_high": 229,
+        "threshold": 34,
+        "min_radius": 0,
+        "max_radius": 0,
+        "line_width": 2
+      }
+    }
+  ]
+}

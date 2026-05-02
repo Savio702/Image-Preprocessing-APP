@@ -1,0 +1,38 @@
+{
+  "format": "image-processing-pipeline",
+  "version": 1,
+  "pipeline": [
+    {
+      "tool_id": "Gaussian Blur",
+      "label": "高斯模糊",
+      "enabled": true,
+      "params": {
+        "kernel_size": 3,
+        "sigma": 0
+      }
+    },
+    {
+      "tool_id": "Binary Threshold",
+      "label": "二值化閾值",
+      "enabled": true,
+      "params": {
+        "threshold": 76,
+        "max_value": 255
+      }
+    },
+    {
+      "tool_id": "Hough Circles",
+      "label": "霍夫圓形",
+      "enabled": true,
+      "params": {
+        "dp": 10,
+        "min_dist": 48,
+        "canny_high": 53,
+        "threshold": 6,
+        "min_radius": 15,
+        "max_radius": 46,
+        "line_width": 2
+      }
+    }
+  ]
+}
